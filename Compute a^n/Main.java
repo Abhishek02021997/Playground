@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int power(int,int);
+int main()
+{
+  int a,b,n;
+    cout<<"Enter the value of a";
+  cout<<"\n";
+  cout<<"Enter the value of n";
+  cout<<"\n";
+ cin>>a>>n;
+  b= power(a,n) ;
+ cout<<"The value of "<<a<<" power "<<n<<" is "<<b ;
+  
+}
+int power (int a,int n)
+{ 
+if(n!=0)
+  return(a*power(a,n-1));
+  else 
+    return 1;
+
+}
